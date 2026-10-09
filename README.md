@@ -12,23 +12,27 @@ Proyecto de QA Automation con Selenium para la pagina web **Sause Demo** con el 
 
 ## Instalación
 
-** instalación de dependencias:**
+*instalación de dependencias:*
 
-``` python+
+``` 
+python+
 pip install pytest
 ```
 
-```python
+```
+python
 pip install pytest-html
 ```
 
-```python
+```
+python
 pip install selenium
 ```
 
 ## Ejecución de pruebas
 
-```python
+```
+python
 pytest
 ```
 
