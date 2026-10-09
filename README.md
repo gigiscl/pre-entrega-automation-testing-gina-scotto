@@ -15,15 +15,18 @@ Proyecto de QA Automation con Selenium para la pagina web **Sauce Demo** con el 
 *instalación de dependencias:*
 
 python
-``` pip install pytest
+``` 
+pip install pytest
 ```
 
 python
-```pip install pytest-html
+```
+pip install pytest-html
 ```
 
 python
-```pip install selenium
+```
+pip install selenium
 ```
 
 ## Ejecución de pruebas
@@ -31,14 +34,16 @@ python
 ### Para ejecutar todos los test:
 
 python
-```pytest
+```
+pytest
 ```
 Al terminar de ejecutarse los test, podrás visualizar los resultados abriendo el archivo reporte.html que se genera en la carpeta reports/.
 
 ### Para ejecutar un test en particular:
 
 python
-```pytest [test_nombre].py
+```
+pytest [test_nombre].py
 ```
 
 ## Casos de prueba
