@@ -13,7 +13,7 @@ class LoginPage:
     def click_login(self):
         self.driver.find_element(By.ID, "login-button").click()
 
-    def login(self, usuario, contraseña):
+    def login(self, usuario="standard_user", contraseña="secret_sauce"):
         self.ingresar_usuario(usuario)
         self.ingresar_contraseña(contraseña)
         self.click_login()

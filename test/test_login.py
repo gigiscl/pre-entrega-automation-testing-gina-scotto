@@ -13,7 +13,7 @@ def test_login_exitoso(driver):
     
     try:
         # Inicia sesion en la pagina 
-        login_page.login("standard_user", "secret_sauce")
+        login_page.login()
 
         #  Se genera una nueva variable que obtiene el titulo de la pagina
         titulo = driver.find_element(By.CLASS_NAME, "app_logo")
