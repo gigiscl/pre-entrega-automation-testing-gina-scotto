@@ -23,3 +23,18 @@ def driver_logueado():
     
     # Cuando el test que lo utilice termine cerrara el navegador
     driver.quit()
+
+@pytest.fixture
+def driver():
+    # Genera la variable driver que contiene el navegador
+    driver = webdriver.Edge()
+
+    # Tiempo de espera implicito no debe superar en cada acción
+    driver.implicitly_wait(7)
+
+    # Se ingresa a la url de la pagina que se realizaran los test
+    driver.get("https://www.saucedemo.com/")
+
+    yield driver
+
+    driver.quit()
