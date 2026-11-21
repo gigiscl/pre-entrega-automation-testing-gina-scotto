@@ -1,36 +1,28 @@
 from selenium.webdriver.common.by import By
+from pages.login_page import LoginPage
+from pages.catalogo_page import CatalogoPage
+from pages.carrito_page import CarritoPage
+from utils.reader import lector_productos_json
 
-# Modulos necesarios para agregar esperas con excepciones
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as e
+def test_carrito(driver):
+    login_page = LoginPage(driver)
+    catalogo_page = CatalogoPage(driver)
+    carrito_page = CarritoPage(driver)
 
-def test_carrito(driver_logueado):
-    #Se genera el logueo llamando a la funcion del test_login
-    driver = driver_logueado
+    login_page.login()
 
-     # Espera explicita
-    espera = WebDriverWait(driver, 10)
- 
-    # Espera a que el primer producto sea visible
-    primer_producto = espera.until(e.visibility_of_element_located((By.CLASS_NAME, "inventory_item")))
+    # Asignar a una variable el nombre del primer producto del json
+    producto = lector_productos_json()[0]
+    print(producto)
 
-    # Asignar a una variable el nombre del primer producto de la web
-    nomb_producto = primer_producto.find_element(By.CLASS_NAME, "inventory_item_name").text
-
-    # Acceder al boton de agregar al carrito
-    boton_agregar = primer_producto.find_element(By.TAG_NAME, "button")
-    boton_agregar.click()
-
-    # Se agrega una nueva espera a que el producto sea visible como añadidio al carrito
-    contador_carrito = espera.until(e.visibility_of_element_located((By.CLASS_NAME, "shopping_cart_badge")))
-
+    # Se agrega el producto seleccionado al carrito mediante el nombre
+    catalogo_page.agregar_producto_carrito(producto["nombre"])
+    
     # Validacion de que el producto se agrego al carrito
-    assert contador_carrito.text == "1"
+    assert catalogo_page.cantidad_productos_carrito() == "1"
 
-    # Verificar que el boton del carrito sea clickeable y cuando sea clickeable, hacerle click
-    espera.until(e.element_to_be_clickable((By.CLASS_NAME, "shopping_cart_badge"))).click()
+    catalogo_page.ir_al_carrito()
 
     # Verificar que el elemento esta en el carrito
-
-    producto_carrito = espera.until(e.visibility_of_element_located((By.CLASS_NAME, "inventory_item_name"))).text
-    assert nomb_producto == producto_carrito
+    assert carrito_page.get_nombre_producto() == producto["nombre"]
+    assert carrito_page.get_precio_producto() == producto["precio"]
