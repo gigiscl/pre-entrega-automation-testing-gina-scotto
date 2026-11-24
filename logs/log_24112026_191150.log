@@ -1,0 +1,8 @@
+2026-11-24 19:11:52,540 INFO talento_tech - Iniciando prueba de carrito.
+2026-11-24 19:11:52,541 INFO talento_tech - Capturando primer producto del json.
+2026-11-24 19:11:52,670 INFO talento_tech - Se agregó el primer producto del json al carrito.
+2026-11-24 19:11:52,693 INFO talento_tech - Se verificó la prieba del contador del carrito.
+2026-11-24 19:11:52,755 INFO talento_tech - Se redirigio a la pagina del carrito
+2026-11-24 19:11:52,755 INFO talento_tech - Se inician pruebas de integridad de los datos.
+2026-11-24 19:11:53,297 INFO talento_tech - Se valido el nombre del producto en el carrito es igual al del json
+2026-11-24 19:11:53,318 INFO talento_tech - Se validó el precio del producto en el carrito es igual al del json.

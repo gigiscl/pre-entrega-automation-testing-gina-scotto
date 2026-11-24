@@ -6,6 +6,14 @@ import pytest_html
 import pathlib
 import base64
 
+from pages.login_page import LoginPage
+
+@pytest.fixture
+def driver_logueado(driver):
+    login_page = LoginPage(driver)
+    login_page.login()
+    return driver
+
 @pytest.fixture
 def driver():
     # Genera la variable driver que contiene el navegador
