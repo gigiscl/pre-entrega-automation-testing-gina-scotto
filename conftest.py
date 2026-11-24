@@ -7,16 +7,19 @@ import pathlib
 import base64
 
 from pages.login_page import LoginPage
+from utils.logger import logger
 
 @pytest.fixture
 def driver_logueado(driver):
     login_page = LoginPage(driver)
     login_page.login()
+    logger.info("Se inicio sesion correctamente.")
     return driver
 
 @pytest.fixture
 def driver():
     # Genera la variable driver que contiene el navegador
+    logger.info("Se ingresa al navegador.")
     driver = webdriver.Edge()
 
     # Tiempo de espera implicito no debe superar en cada acción
@@ -24,9 +27,11 @@ def driver():
 
     # Se ingresa a la url de la pagina que se realizaran los test
     driver.get("https://www.saucedemo.com/")
+    logger.info("Se accede a la url de la pagina web.")
 
     yield driver
 
+    logger.info("Cerrando el navegador.")
     driver.quit()
 
 @pytest.fixture
