@@ -1,0 +1,18 @@
+2026-11-27 00:22:47,633 INFO talento_tech - Se ingresa al navegador.
+2026-11-27 00:22:51,411 INFO talento_tech - Se accede a la url de la pagina web.
+2026-11-27 00:22:51,412 INFO talento_tech - Iniciando prueba del login.
+2026-11-27 00:22:51,652 INFO talento_tech - Ingreso de credenciales.
+2026-11-27 00:22:51,720 INFO talento_tech - Login exitoso.
+2026-11-27 00:22:51,721 INFO talento_tech - Cerrando el navegador.
+2026-11-27 00:22:53,969 INFO talento_tech - Se ingresa al navegador.
+2026-11-27 00:22:55,051 INFO talento_tech - Se accede a la url de la pagina web.
+2026-11-27 00:22:55,052 INFO talento_tech - Iniciando prueba del login.
+2026-11-27 00:22:55,309 INFO talento_tech - Ingreso de credenciales.
+2026-11-27 00:22:55,396 INFO talento_tech - Login invalido con captura de mensaje de error.
+2026-11-27 00:22:55,397 INFO talento_tech - Cerrando el navegador.
+2026-11-27 00:22:57,692 INFO talento_tech - Se ingresa al navegador.
+2026-11-27 00:22:58,726 INFO talento_tech - Se accede a la url de la pagina web.
+2026-11-27 00:22:58,727 INFO talento_tech - Iniciando prueba del login.
+2026-11-27 00:22:58,964 INFO talento_tech - Ingreso de credenciales.
+2026-11-27 00:22:58,998 INFO talento_tech - Login invalido con captura de mensaje de error.
+2026-11-27 00:22:58,999 INFO talento_tech - Cerrando el navegador.

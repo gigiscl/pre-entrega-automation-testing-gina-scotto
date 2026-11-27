@@ -1,0 +1,35 @@
+2026-11-27 00:24:12,261 INFO talento_tech - Iniciando prueba para obtener usuario de la API.
+2026-11-27 00:24:13,455 INFO talento_tech - Iniciando validaciones de status code
+2026-11-27 00:24:13,455 INFO talento_tech - Se realizo exitosamente la operación, se obtuvo el codigo 200.
+2026-11-27 00:24:13,455 INFO talento_tech - Iniciando validaciones de headers
+2026-11-27 00:24:13,455 INFO talento_tech - Se verificó que el formato de la informaçión es de tipo json
+2026-11-27 00:24:13,456 INFO talento_tech - Iniciando validaciones de estructura.
+2026-11-27 00:24:13,456 INFO talento_tech - Se verificó que el elemento recibido en data es un diccionario.
+2026-11-27 00:24:13,456 INFO talento_tech - Se verificó que dentro del diccionario hay una clave 'data'
+2026-11-27 00:24:13,456 INFO talento_tech - Se verificó que dentro de data hay otro diccionario
+2026-11-27 00:24:13,456 INFO talento_tech - Se verificó que dentro de data hay id, email, first_name y last_name
+2026-11-27 00:24:13,456 INFO talento_tech - Iniciando validaciones de contenido.
+2026-11-27 00:24:13,456 INFO talento_tech - Se verificó el valor del id es igual a 2
+2026-11-27 00:24:13,456 INFO talento_tech - Se verificó que el valor del email es igual a janet.weaver@regres.in
+2026-11-27 00:24:13,456 INFO talento_tech - Iniciando validaciones de tiempo de respuesta.
+2026-11-27 00:24:13,456 INFO talento_tech - Se verificó que el tiempo total en segundos desde el envio de la solicitud fue menor a 2s.
+2026-11-27 00:24:16,534 INFO talento_tech - Iniciando prueba de creacion de usuario.
+2026-11-27 00:24:17,660 INFO talento_tech - Iniciando validaciones de status code
+2026-11-27 00:24:17,660 INFO talento_tech - Se valido el status code es 201
+2026-11-27 00:24:17,660 INFO talento_tech - Iniciando validaciones de headers
+2026-11-27 00:24:17,660 INFO talento_tech - Se verificó que el formato de la información recibida es un json
+2026-11-27 00:24:17,660 INFO talento_tech - Iniciando validaciones de estructura.
+2026-11-27 00:24:17,660 INFO talento_tech - Se verificó que en data se encuentran email, frist_name, last_name y id.
+2026-11-27 00:24:17,660 INFO talento_tech - Iniciando validaciones de contenido.
+2026-11-27 00:24:17,660 INFO talento_tech - Se verificó que el email y first_name creados son iguales a los envidados.
+2026-11-27 00:24:17,660 INFO talento_tech - Iniciando validaciones de tiempo de respuesta.
+2026-11-27 00:24:17,660 INFO talento_tech - Se verifico que demoro menos de 2 segundo en hacer la solicitud al servidor.
+2026-11-27 00:24:19,448 INFO talento_tech - Iniciando prueba de eliminación de usuario.
+2026-11-27 00:24:20,574 INFO talento_tech - Iniciando validación de status code.
+2026-11-27 00:24:20,574 INFO talento_tech - Se verificó que el estatus code es igual a 204.
+2026-11-27 00:24:20,574 INFO talento_tech - Iniciando validación de headers
+2026-11-27 00:24:20,574 INFO talento_tech - Se verificó que no hay un json.
+2026-11-27 00:24:20,574 INFO talento_tech - Iniciando validaciones de estructura y contenido.
+2026-11-27 00:24:20,574 INFO talento_tech - Se verifico que el contenido esta vacio.
+2026-11-27 00:24:20,574 INFO talento_tech - Iniciando validaciones de tiempo de respuesta
+2026-11-27 00:24:20,574 INFO talento_tech - Se verificó que la solicitud duró menos de 2 segundos.
