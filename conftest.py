@@ -20,7 +20,12 @@ def driver_logueado(driver):
 def driver():
     # Genera la variable driver que contiene el navegador
     logger.info("Se ingresa al navegador.")
-    driver = webdriver.Edge()
+    options = webdriver.EdgeOptions()
+    # Argumento necesario para la ejecución automatica de los test en github
+    options.add_argument("--headless=new")
+    # Se configura el navegador en modo incognito
+    options.add_argument("--incognito")
+    driver = webdriver.Edge(options=options)
 
     # Tiempo de espera implicito no debe superar en cada acción
     driver.implicitly_wait(7)
