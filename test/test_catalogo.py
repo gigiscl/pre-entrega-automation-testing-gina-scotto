@@ -9,7 +9,7 @@ def test_catalogo(driver_logueado):
         catalogo_page = CatalogoPage(driver_logueado)
     
         logger.info("Ingreso al inventory.")
-        # Se acede a los productos del catalogo
+        # Se accede a los productos del catalogo
         productos = catalogo_page.lista_productos()
         logger.info("Captura de todos los productos disponibles.")
         
