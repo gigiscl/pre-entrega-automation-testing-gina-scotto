@@ -14,7 +14,7 @@ Feature: Inicio de sesion
     Scenario Outline: Login invalido con diferentes credenciales
         When ingresa en los campos de datos "<usuario>" y "<password>"
         And hace click en el boton de login
-        Then deberia mostrase el mensaje de error "<mensaje>"
+        Then deberia mostrase el mensaje de error "<mensaje>" y permanecer en la pagina de login
 
         Examples:
             |usuario|password|mensaje|
