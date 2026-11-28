@@ -28,7 +28,7 @@ class LoginPage:
         # Retorna si sigue o no en la pagina del login.
         return self.driver.current_url == "https://www.saucedemo.com/"
 
-    def mensaje_errpr(self):
+    def mensaje_error(self):
         texto_error = self.espera.until(ex.visibility_of_element_located((By.CSS_SELECTOR, ".error > h3")))
         return texto_error.text    
 

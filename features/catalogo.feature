@@ -1,6 +1,6 @@
 Feature: Navegación en el Inventory
 
-    Scenario: Inicio de sesion exitoso
+    Scenario: Validaciones de navegación en catalogosss
         Given el usuario inicia sesion exitosamente y se encuentra en el catalogo
         When se accede a la lista de todos los productos disponibles en el catalogo
         Then deberia haber al menos un producto en el inventory

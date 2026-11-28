@@ -19,7 +19,7 @@ def test_login_exitoso(driver, data):
         logger.info("Ingreso de credenciales.")
 
         if(login_page.sigue_en_login()):
-            error = login_page.mensaje_errpr()
+            error = login_page.mensaje_error()
             print(error)
             assert "Epic sadface" in error
             logger.info("Login invalido con captura de mensaje de error.")
